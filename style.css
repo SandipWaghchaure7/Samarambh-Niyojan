@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('backgroundimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: orange;
+}
+
+.background-image {
+    background: url('backgroundimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} 
+#event-slider{
+    color: white;
+    display: flex;
+    animation: slide 20s linear infinite; /* Adjust the duration as needed */
+
+}
+
+#event-slider img{
+
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    border-color: orange;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#event-slider img:hover{
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    transform: translate(0px,-10px);
+    transition-duration: 2s;
+}
+
+
+.contact-content{
+    background-color: #333;
+    margin-top: 200px;
+    padding: 25px;
+}
+
+.contact_heading{
+    border-color: orange;
+    border-width: 1px;
+    border-style: solid;
+    color: orange;
+    padding: 25px;
+}
+
+.map{
+    padding: 8px;
+    margin-top: 50px;
+    border-width: 1px;
+    border-style: solid;
+    color: orange;
+}
+.info_mail{
+    height: 500px;
+    width: 1200px;
+    margin-top: 30px;
+    padding: 25px;
+    border-width: 1px;
+    border-style: solid;
+    color: orange;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.organizer-info{
+    margin-top: 30px;
+    padding: 25px;
+    padding-right: 100px;
+    color: orange;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    color: orange;
+    display: inline-block;
+}
+
+.contact_email{
+    padding: 25px;
+    padding-right: 100px;
+    color: orange;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    color: orange;
+    display: inline-block;
+
+}
+.quicklink1{
+    padding: 25px;
+    padding-right: 100px;
+    color: orange;
+    /* border-right-width: 1px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid; */
+    color: orange;
+    display: inline-block;
+
+}
+.event1details{
+    color: orange;
+    padding: 20px;
+    height: 400px;
+    width: 700px;
+    margin-left: 300px;
+    margin-bottom: 200px;
+    border-color: orange;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #333;
+}
+button {
+    background-color: #fa9c0e;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+button:hover {
+    background-color: black;
+    color: orange;
+    border-color: orange;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.registration{
+    height: 700px;
+    width: 600px;
+    margin-left: 7cm;
+    margin-top: 3cm;
+    margin-bottom: 5cm;
+    background-color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 2cm;
+    padding-top: 2cm;
+    padding-right: 2cm;
+     border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+ 
+}
+
+.payment{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    margin-left: 400px;
+    margin-top: 3cm;
+    margin-bottom: 5cm;
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    padding-left: 2cm;
+    padding-top: 1cm;
+    padding-right: 2cm;
+}
+
+.login{
+  
+    margin-top:3cm ;
+    margin-left: 400px;
+    height: 12cm; 
+   width: 10cm;
+   background-color: white;
+  border-color: orange;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: orangered; 
+  padding-left: 2cm;
+    padding-top: 2cm;
+    padding-right: 2cm;
+  
+  
+  }
+
+  .organize_form{
+    height: 2500px;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 3cm;
+    margin-bottom: 500px;
+    background-color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 2cm;
+    padding-top: 2cm;
+    padding-right: 2cm;
+     border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+ 
+}
+.past_event {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  
+  .past_event > div {
+    color: orange;
+    height:700px;
+    width: 600px;
+    margin: 10px;
+    /* text-align: center; */
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #333;
+    padding-left: 20px;
+ 
+   
+  }

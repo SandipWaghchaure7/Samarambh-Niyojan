@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Samarambh Niyojan</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Samarambh Niyojan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="organize.html">Organize Event</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="organize_form">
+        <h1 style="text-align: center; background-color: #333; color: orange;">Registration Form For Organizer</h1>
+        <br><br>
+
+        <form id="organize_form" onsubmit="return validateForm()">
+            <h2>1 Personal Information</h2>
+            <label for="full-name">Full Name:</label><br><br>
+            <input type="text" id="full-name" name="full-name" required /><br><br>
+
+            <label for="phone-no">Phone No:</label><br><br>
+            <input type="text" id="phone-no" name="phone-no" required /><br><br>
+
+            <label for="email">Email:</label><br><br>
+            <input type="text" id="email" name="email" required /><br><br>
+
+            <label for="address"> Address:</label><br><br>
+            <textarea cols="80" rows="5" id="address" name="address"></textarea><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" />
+
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" /><br><br>
+
+            <h2>2 Event Information</h2>
+
+            <label for="event_type">Type of event (e.g., wedding, corporate conference, birthday party, etc.):</label><br><br>
+            <input type="text" id="event_type" name="event_type" required /><br><br>
+
+            <label for="event_data">Event date::</label><br><br>
+            <input type="text" id="event_date" name="event_date" required /><br><br>
+
+            <label for="event_time">Event Time:</label><br><br>
+            <input type="text" id="event_time" name="event_time" required /><br><br>
+
+            <label for="venue">Name of Location or Venue:</label><br><br>
+            <input type="text" id="venue" name="venue" required /><br><br>
+
+            <label for="attendee_no">Estimated number of attendees:</label><br><br>
+            <input type="text" id="attendee_no" name="attendee_no" required /><br><br>
+
+            <label for="requirement">Theme or Specific requirements:</label><br><br>
+            <input type="text" id="requirement" name="requirement" required /><br><br>
+
+             <label for="attendee_no">range of Budget:</label><br><br>
+            <input type="text" id="attendee_no" name="attendee_no" required /><br><br>
+
+            <label for="detail">Detail Information About Event:</label><br><br>
+            <textarea cols="80" rows="5" id="detail" name="detail"></textarea><br><br>
+
+
+            <h2>3 Services Required:</h2><br><br>
+        <label for="catering">1] Catering:</label>  <br><br>  
+        <input   type="radio" id="catering" name="catering"/> Yes <br>  <br>
+        <input   type="radio" id="catering" name="catering"/> No <br>  <br>
+        
+        <label for="decoration">2] Decorations:</label>  <br><br>  
+        <input   type="radio" id="decoration" name="decoration"/> Yes <br>  <br>
+        <input   type="radio" id="decoration" name="decoration"/> No <br>  <br>
+
+        <label for="Entertainment">3] Entertainment:</label>  <br><br>  
+        <input   type="radio" id="Entertainment" name="Entertainment"/> Yes <br>  <br>
+        <input   type="radio" id="Entertainment" name="Entertainment"/> No <br>  <br>
+
+        <label for="audio_visual">4] Audio-visual equipment:</label>  <br><br>  
+        <input   type="radio" id="audio_visual" name="audio_visual"/> Yes <br>  <br>
+        <input   type="radio" id="audio_visual" name="audio_visual"/> No <br>  <br>
+        
+        <label for="Transportation">5] Transportation:</label>  <br><br>  
+        <input   type="radio" id="Transportation" name="Transportation"/> Yes <br>  <br>
+        <input   type="radio" id="Transportation" name="Transportation"/> No <br>  <br>
+
+        <label for="photo_video">6] Photography and videography:</label>  <br><br>  
+        <input   type="radio" id="photo_video" name="photo_video"/> Yes <br>  <br>
+        <input   type="radio" id="photo_video" name="photo_video"/> No <br>  <br>
+
+       
+        
+        <br> 
+
+            <br><br><br><br><br><br>
+            <h3>Please enter submit for Payment procedure</h3>
+        <a href="payment.html" style="text-align: center; padding-left: 10px; font-size: large; ">  <button type="button">Submit</button></a>
+           
+<!-- <a href="payment_page.html">  <button type="button">Submit</button></a> -->
+
+        </form>
+    </div><br>
+</body>
+</html>

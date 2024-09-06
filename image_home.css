@@ -1,0 +1,16 @@
+/* style.css */
+
+.image-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}

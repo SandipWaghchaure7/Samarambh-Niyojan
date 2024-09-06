@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Samarambh Niyojan</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Samarambh Niyojan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="organize.html">Organize Event</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="registration">
+        <h1 style="text-align: center; background-color: #333; color: orange;">Registration Form</h1>
+        <br><br>
+        <form id="registration-form" onsubmit="return validateForm()">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required /><br><br>
+
+            <label for="phone-no">Phone No:</label>
+            <input type="text" id="phone-no" name="phone-no" required /><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required /><br><br>
+
+            Address<br>
+            <textarea cols="80" rows="5" id="address" name="address"></textarea><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" /><br><br>
+
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" /><br>
+
+            <br><br><br><br><br><br>
+            <h3>Please enter submit for Payment procedure</h3>
+        <a href="payment.html" style="text-align: center; padding-left: 200px; font-size: large; ">  <button type="button">Submit</button></a>
+          
+<!-- <a href="payment_page.html">  <button type="button">Submit</button></a> -->
+
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var fullName = document.getElementById("full-name").value;
+            var phoneNo = document.getElementById("phone-no").value;
+            var email = document.getElementById("email").value;
+
+            // Check if Full Name and Phone No are not empty
+            if (fullName.trim() === "") {
+                alert("Full Name cannot be empty");
+                return false;
+            }
+            if (phoneNo.trim() === "") {
+                alert("Phone No cannot be empty");
+                return false;
+            }
+
+            // Check if Email has a valid format
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!email.match(emailRegex)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            // If all checks pass, the form will be submitted
+            alert("register Successful");
+            return true;
+        }
+    </script>
+</body>
+</html>
